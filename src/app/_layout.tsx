@@ -4,7 +4,7 @@ import {Slot} from "expo-router";
 import "../global.css"
 import {View} from "react-native";
 import {useFonts, Inter_400Regular, Inter_500Medium, Inter_600SemiBold} from "@expo-google-fonts/inter";
-import Loading from "@/src/components/ui/loading";
+import Loading from "@/components/ui/loading";
 function Layout(){
   const [fontIsLoaded] = useFonts({Inter_400Regular, Inter_500Medium, Inter_600SemiBold})
   if(!fontIsLoaded){return <Loading/>}
